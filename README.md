@@ -1,4 +1,4 @@
-# Dynamyc review of graph databases in bioinformatics and systems biology
+# A dynamyc review of graph databases in bioinformatics and systems biology
 
 This repository hosts a dynamic review of the use of graph databases in bioinformatics and systems biology. The searches results are updated regulary. The list of graph databases was formed based on the [DB-Engines](https://db-engines.com/en/) initiative with the list of popular [graph database management systems](https://db-engines.com/en/ranking/graph+dbms) ranked. 
 
