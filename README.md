@@ -4,5 +4,5 @@ This repository hosts a dynamic review of the use of graph databases in bioinfor
 
 The **[searchresults](https://github.com/ilyamazein/gdbreview/tree/main/searchresults)** folder contains zip archives with CSV files. The corresponding search queries are provided in the TXT files.
 
-The **code** folder contains the Python code used for integrating search results into a single table.
+The **[code](https://github.com/ilyamazein/gdbreview/tree/main/code)** folder contains the Python code used for integrating search results into a single table.
 
