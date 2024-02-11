@@ -4,14 +4,16 @@ import pandas as pd
 
 def metadata_by_id(db, id_list):
 
-# A function that downloads publication metadata by its internal database ID.
-# It also parses publication IDs such as DOI and adds them to the metadata dictionary as separate entities.
+'''
+A function that downloads publication metadata by its internal database ID.
+It also parses publication IDs such as DOI and adds them to the metadata dictionary as separate entities.
 
-# Takes in the following parameters:
-# db: a string, the name of the required database ('pmc' or 'pubmed')
-# id_list: a list of IDs pointing to the required publications in the database
+Takes in the following parameters:
+db: a string, the name of the required database ('pmc' or 'pubmed')
+id_list: a list of IDs pointing to the required publications in the database
 
-# Returns a list of dictionaries, containing publication metadata.
+Returns a list of dictionaries, containing publication metadata.
+'''
     
     data_list = []
 
@@ -45,17 +47,19 @@ def metadata_by_id(db, id_list):
 
 def pub_met(query, database, max_date, batch_size):
 
-# A function that downloads metadata of publications returned by the given database query.
-# To do so it extracts all internal database IDs for publications returned by the query,
-# and passes them to the metadata_by_id function.
+'''
+A function that downloads metadata of publications returned by the given database query.
+To do so it extracts all internal database IDs for publications returned by the query,
+and passes them to the metadata_by_id function.
 
-# Takes in the following parameters:
-# query: a string, the required database query
-# database: a string, the name of the required database ('pmc' or 'pubmed'),
-# max_date: a string in the format 'YYYY/MM/DD', the cut-off publication date
-# batch_size: an integer specifying the batch size of IDs passed to the metadata_by_id function
+Takes in the following parameters:
+query: a string, the required database query
+database: a string, the name of the required database ('pmc' or 'pubmed'),
+max_date: a string in the format 'YYYY/MM/DD', the cut-off publication date
+batch_size: an integer specifying the batch size of IDs passed to the metadata_by_id function
 
-# Returns a dataframe containing publication metadata.
+Returns a dataframe containing publication metadata.
+'''
 
     query = '+'.join(query.split(' '))
 
